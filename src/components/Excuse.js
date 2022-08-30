@@ -6,11 +6,11 @@ const Excuse = () => {
     const [Excused, setExcused] = useState([]);
     const [Category, setCategory] = useState([]);
     const endpointDevJoke = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,racist&type=single"
-    const endpointOffice = "https://excuser.herokuapp.com/v1/excuse/office";
-    const endpointFamily = "https://excuser.herokuapp.com/v1/excuse/family";
-    const endpointChildren = "https://excuser.herokuapp.com/v1/excuse/children";
-    const endpointCollege = "https://excuser.herokuapp.com/v1/excuse/college";
-    const endpointParty = "https://excuser.herokuapp.com/v1/excuse/party";
+    // const endpointOffice = "https://excuser.herokuapp.com/v1/excuse/office";
+    // const endpointFamily = "https://excuser.herokuapp.com/v1/excuse/family";
+    // const endpointChildren = "https://excuser.herokuapp.com/v1/excuse/children";
+    // const endpointCollege = "https://excuser.herokuapp.com/v1/excuse/college";
+    // const endpointParty = "https://excuser.herokuapp.com/v1/excuse/party";
 
     useEffect(() => {
         getDevJoke()
@@ -90,9 +90,9 @@ const Excuse = () => {
     {
             <>
             <div className="card mb-3 mt-5 mx-auto shadow w-50" id='crd'>
-                <h3 className="card-header mt-2 text-dark">{Category}</h3>
+                <h3 className="card-header mt-2 text-light rounded shadow">{Category}</h3>
                 <div className="card-body">
-                    <p className="card-text fs-4 text-center" id='exc'>{Excused}</p>
+                    <p className="card-text fs-4 text-center shadow-sm" id='exc'>{Excused}</p>
                 </div>
             </div>
             </>
