@@ -79,20 +79,20 @@ const Excuse = () => {
     // }
   return (
     <>
-    <marquee behavior="" direction="" className="text-dark fs-5 fw-bold">Excuse is the tool for the incompetent. Be stronger than your excuses</marquee>
-    <div className="container-fluid mx-auto bg-info rounded shadow-lg col-lg-7">
-        <h1 className="fs-3 text-dark text-center text-decoration-underline rounded">Get 'da Excuses in🤣</h1>
+    <marquee behavior="" direction="" className="text-warning fs-5 fw-bold">People say nothing is impossible, but I do nothing everyday</marquee>
+    <div className="container-fluid mx-auto bg-warning rounded shadow-lg col-lg-5">
+        <h1 className="fs-3 text-dark text-center text-decoration-underline rounded">Get ready to laugh🤣</h1>
         <div className="p-3" id='btns'>
-            <button className="btn btn-dark col-lg-5 p-2 mx-auto" onClick={getDevJoke}>Joke</button>
+            <button className="btn btn-dark col-lg-5 p-2 mx-auto" onClick={getDevJoke}>Next</button>
         </div>
     </div>
 
     {
             <>
-            <div className="card mb-3 mt-5 mx-auto shadow w-50" id='crd'>
+            <div className="card mb-3 mt-5 mx-auto shadow w-lg-50 w-sm-100" id='crd'>
                 <h3 className="card-header mt-2 text-light rounded shadow">{Category}</h3>
-                <div className="card-body">
-                    <p className="card-text fs-4 text-center shadow-sm" id='exc'>{Excused}</p>
+                <div className="card-body mt-3">
+                    <p className="card-text fs-4 text-center text-light shadow-sm" id='exc'>{Excused}</p>
                 </div>
             </div>
             </>
