@@ -83,8 +83,8 @@ body {
         font-family:'Segoe UI';
     }
     .card {
-        width: 350px;
-        height: 400px;
+        width: 360px;
+        height: 480px;
         margin: 30px;
       }
 }
